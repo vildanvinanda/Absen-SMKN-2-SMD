@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primer">#11145A</color>
+    <color name="biruTua">#4963A8</color>
+    <color name="orangePlat">#FF7F5D</color>
+    <color name="pink">#FF90A4</color>
+    <color name="kuning">#FEC570</color>
+    <color name="unguMuda">#8287FA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ijoMuda">#70D75F</color>
+    <color name="merah">#F66464</color>
+    <color name="ungu">#B726CF</color>
+    <color name="black">#000000</color>
+</resources>

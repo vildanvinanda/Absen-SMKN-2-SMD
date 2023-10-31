@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/item_absen"
+    >
+    <RelativeLayout
+        android:paddingVertical="10dp"
+        android:id="@+id/tamplatepertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-03-12"
+            android:textSize="12dp"
+            android:textColor="#242424"
+            android:fontFamily="@font/poppinsmedium"
+            />
+        <TextView
+            android:layout_toEndOf="@+id/tgl"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/jml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Orang"
+            android:textSize="12dp"
+            android:textColor="#242424"
+            android:fontFamily="@font/poppinsbold"
+            />
+        <ImageView
+            android:id="@+id/rowrightfaq"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_panahkanan"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jawabanbg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tamplatepertanyaan"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="2dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_bg"
+        android:padding="10dp"
+        android:visibility="visible"
+        >
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/recabsen"
+           />
+    </RelativeLayout>
+</RelativeLayout>

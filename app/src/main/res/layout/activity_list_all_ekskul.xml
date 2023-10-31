@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ASuperUser.ListAllEkskul"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tester.PermintaanBergabung"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            >
+            <RelativeLayout
+                android:id="@+id/header1"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_panahkiri"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List Ekskul"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/kolomsearch"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bgedittext"
+                android:drawableEnd="@drawable/ic_search"
+                android:elevation="8dp"
+                android:hint="Type something"
+                android:textColorHint="#dfdfdf"
+                android:paddingVertical="6dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:translationY="0dp"
+                android:translationZ="0dp"
+                android:layout_below="@+id/header1"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah user saat ini:"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:id="@+id/txtjml"
+                android:layout_below="@+id/kolomsearch"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/txtjml"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:id="@+id/addjml"
+                android:layout_below="@+id/kolomsearch"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:id="@+id/lane"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtjml"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDD"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lane"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_list_all_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

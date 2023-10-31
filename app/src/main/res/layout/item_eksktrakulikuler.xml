@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/pembatas"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ekskulpaskibra"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_toEndOf="@+id/pembatas"
+            android:id="@+id/txtjdl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memenangkan Kejuaraan"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/txtjdl2"
+            android:layout_toEndOf="@+id/pembatas"
+            android:id="@+id/txtisi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silat merupakan seni beladiri indonesia yang telah.."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginHorizontal="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+
+        <RelativeLayout
+            android:layout_alignBottom="@+id/pembatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pembatas"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txtjml2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jml anggota :"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/txttotal2"
+                android:layout_toEndOf="@+id/txtjml2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinssemibold"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

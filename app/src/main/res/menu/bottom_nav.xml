@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title="Dashboard"
+        android:enabled="true"
+        android:id="@+id/miDashboard"
+        android:icon="@drawable/child_selector1"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="Jadwal"
+        android:id="@+id/miJadwal"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector2"/>
+
+    <item android:title="Riwayat"
+        android:enabled="true"
+        android:id="@+id/miRiwayat"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector3"/>
+
+    <item android:title="Profil"
+        android:enabled="true"
+        android:id="@+id/miProfil"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector4"/>
+
+
+</menu>

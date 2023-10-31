@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DashboardSU"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:id="@+id/tamplateinti"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/headeratas"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            app:cardCornerRadius="50dp"
+                            >
+                            <ImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/tes"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <RelativeLayout
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/cardView"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/ucapan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Selamat Datang"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="12dp"
+                                />
+                            <TextView
+                                android:id="@+id/nama"
+                                android:layout_below="@+id/ucapan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Michael Jordan"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="14dp"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/eskulsekolah"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/headeratas"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_marginHorizontal="5dp"
+                        >
+                        <ImageView
+                            android:id="@+id/profilsekolah"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ekskulpaskibra"
+                            />
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:id="@+id/btn"
+                        android:layout_below="@+id/eskulsekolah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:id="@+id/btn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btneskul"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/biruTua"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_logoeskul"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btneskul"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Eskul"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:id="@+id/btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnabsen"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                android:layout_centerHorizontal="true"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/pink"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_scan"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnabsen"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Absen"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:id="@+id/btn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btngaleri"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                android:layout_centerHorizontal="true"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/orangePlat"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_galeri"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btngaleri"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Galeri"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/btn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnprestasi"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/kuning"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_piala"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnprestasi"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Prestasi"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tamplatebtn2"
+                        android:layout_below="@+id/btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:id="@+id/btn5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+                            <androidx.cardview.widget.CardView
+                            android:layout_centerHorizontal="true"
+                                android:id="@+id/btnanggota"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/ijoMuda"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_adduser"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnanggota"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota Baru"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:id="@+id/btn6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnstruktur"
+                                android:layout_width="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#26CFA7"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_struktur"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnstruktur"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Struktur \nOrganisasi"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/btn7"
+                            android:visibility="visible"
+                            android:layout_weight="1"
+                            android:layout_toStartOf="@id/btn8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnglist"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                android:layout_centerHorizontal="true"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#22324C"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_file"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnglist"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Daftar Absen"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="11dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/btn8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnglist2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="10dp"
+                                android:layout_centerHorizontal="true"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/ungu"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/ic_listanggota"
+                                        />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/btnglist2"
+                                android:layout_width="65dp"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="List Anggota"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:layout_centerHorizontal="true"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Galeri"
+                        android:layout_below="@+id/tamplatebtn2"
+                        android:id="@+id/txtgaleri"
+                        android:layout_marginTop="30dp"
+                        />
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_below="@id/txtgaleri"-->
+                    <!--                android:layout_marginTop="20dp"-->
+                    <!--                >-->
+                    <!--                <HorizontalScrollView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    >-->
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        >-->
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:id="@+id/cardG1"-->
+                    <!--                            android:layout_width="130dp"-->
+                    <!--                            android:layout_height="160dp"-->
+                    <!--                            app:cardCornerRadius="10dp"-->
+                    <!--                            >-->
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="match_parent"-->
+                    <!--                                android:background="@drawable/ekskulbkc"-->
+                    <!--                                />-->
+                    <!--                        </androidx.cardview.widget.CardView>-->
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_marginLeft="20dp"-->
+                    <!--                            android:id="@+id/cardG2"-->
+                    <!--                            android:layout_width="130dp"-->
+                    <!--                            android:layout_height="160dp"-->
+                    <!--                            app:cardCornerRadius="10dp"-->
+                    <!--                            >-->
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="match_parent"-->
+                    <!--                                android:background="@drawable/ekskulpaskibra"-->
+                    <!--                                />-->
+                    <!--                        </androidx.cardview.widget.CardView>-->
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:id="@+id/cardG3"-->
+                    <!--                            android:layout_marginLeft="20dp"-->
+                    <!--                            android:layout_width="130dp"-->
+                    <!--                            android:layout_height="160dp"-->
+                    <!--                            app:cardCornerRadius="10dp"-->
+                    <!--                            >-->
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="match_parent"-->
+                    <!--                                android:background="@drawable/eksulbasket"-->
+                    <!--                                />-->
+                    <!--                        </androidx.cardview.widget.CardView>-->
+                    <!--                    </LinearLayout>-->
+                    <!--                </HorizontalScrollView>-->
+                    <!--            </RelativeLayout>-->
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recgaleri_dashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtgaleri"
+                        android:layout_marginTop="10dp"
+                        tools:listitem="@layout/item_galeri"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tamplateinti"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

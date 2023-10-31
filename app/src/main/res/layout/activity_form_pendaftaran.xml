@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AUser.FormPendaftaran"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Form Pendaftaran"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:layout_centerHorizontal="true"
+
+                    android:id="@+id/jdl_jadwal"
+                    />
+                <ImageView
+                    android:id="@+id/btnback"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/ic_panahkiri"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/header"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtnis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="NIS"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/addnis"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtnis"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColorHint="#D4D4D4"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:hint="Masukan nis anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/addnis"
+                    android:id="@+id/txtnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/addnama"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textColorHint="#D4D4D4"
+                    android:inputType="number"
+                    android:textSize="12dp"
+                    android:hint="Masukan nama anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addnama"
+                    android:id="@+id/txtjk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:maxLength="13"
+                    android:id="@+id/addjk"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtjk"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="Masukan jenis kelamin anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addjk"
+                    android:id="@+id/txtnohp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Nomor HP"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:maxLength="13"
+                    android:id="@+id/addnomor"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtnohp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="Masukan jenis kelamin anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/tampaltealamat"
+                    android:layout_below="@+id/addnomor"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txtkls"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Kelas"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/addkls"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tampaltealamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan kelas anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtalamat"
+                    android:layout_below="@+id/addkls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addalamat"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtalamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan alamat anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/addalamat"
+                    android:id="@+id/txtekstrakulikuler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Pilihan Ekstrakulikuler"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+
+                <EditText
+                    android:id="@+id/addekstrakulikuler"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtekstrakulikuler"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan ekskul anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_below="@+id/addekstrakulikuler"
+                    android:id="@+id/txtalasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Alasan anda mengikuti ekstrakulikuler ini  :"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+
+                <EditText
+                    android:paddingVertical="10dp"
+                    android:gravity="top|left"
+                    android:id="@+id/addalasan"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtalasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan alasan anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnbergabung"
+                    android:layout_below="@id/addalasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bergabung"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:background="@drawable/bgtombol"
+                    android:layout_marginTop="40dp"
+                    android:paddingHorizontal="100dp"
+                    android:paddingVertical="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

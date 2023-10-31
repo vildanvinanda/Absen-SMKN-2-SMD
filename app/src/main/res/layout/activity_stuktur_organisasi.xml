@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ASuperUser.StukturOrganisasi"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Struktur Organisasi"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:layout_centerHorizontal="true"
+
+                    android:id="@+id/jdl_jadwal"
+                    />
+                <ImageView
+                    android:id="@+id/btnback"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/ic_panahkiri"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/header"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/text"
+                >
+                <TextView
+                    android:id="@+id/txtkepengurusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Kepenguusan Ekstrakulikuler Basket"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/text"
+                android:id="@+id/kontener1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kuning"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:id="@+id/pertanyaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ketua"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    android:rotation="90"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_ketua"
+                android:layout_below="@+id/kontener1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rec_list_ketua"
+                android:id="@+id/kontener2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/txtwakil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wakil"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_wakil"
+                android:layout_below="@+id/kontener2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rec_list_wakil"
+                android:id="@+id/kontener3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtsekretaris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sekretaris"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_sekretaris"
+                android:layout_below="@+id/kontener3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rec_list_sekretaris"
+                android:id="@+id/kontener4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtBendahara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bendahara"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_bendahara"
+                android:layout_below="@+id/kontener4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rec_list_bendahara"
+                android:id="@+id/kontener5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtAbsensi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absensi"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_absensi"
+                android:layout_below="@+id/kontener5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rec_list_absensi"
+                android:id="@+id/kontener6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtAnggota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anggota"
+                    android:textSize="12dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/poppinssemibold"
+                    />
+
+                <ImageView
+                    android:id="@+id/rowright6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_panahkanan"
+                    />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_list_anggota"
+                android:layout_below="@+id/kontener6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

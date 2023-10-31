@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ASuperUser.TambahJadwal"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Jadwal"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/jdl_jadwal"
+                    />
+                <ImageView
+                    android:id="@+id/btnback"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/ic_panahkiri"
+                    android:onClick="btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/header"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtkegiatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Judul Kegiatan"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addkegiatan"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtkegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColorHint="#D4D4D4"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:hint="Masukan kegiatan"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addkegiatan"
+                    android:id="@+id/txtJam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Jam"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addjam"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtJam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textColorHint="#D4D4D4"
+                    android:textSize="12dp"
+                    android:hint="Masukan jam"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addjam"
+                    android:id="@+id/txttempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Tempat"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addtempat"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txttempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan tempat anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addtempat"
+                    android:id="@+id/txthari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Hari"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addhari"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txthari"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan hari"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/addhari"
+                    android:id="@+id/txtnamaekskul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Nama EKskul"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/addekskul"
+                    android:textColorHint="#D4D4D4"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/txtnamaekskul"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:hint="Masukan nama ekskul anda"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnbergabung"
+                    android:layout_below="@id/addekskul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buat"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:background="@drawable/bgtombol"
+                    android:layout_marginTop="40dp"
+                    android:paddingHorizontal="100dp"
+                    android:paddingVertical="10dp"
+                    android:onClick="btn"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
